@@ -1,5 +1,5 @@
 {
-  "name": "starter-kit",
+  "name": "find-and-replace",
   "version": 2,
   "builds": [
     {
@@ -8,5 +8,5 @@
     }
   ],
   "routes": [{ "src": "/(.*)", "dest": "dist/$1" }],
-  "alias": ["starter-kit.now.sh"]
+  "alias": ["find-and-replace.now.sh"]
 }

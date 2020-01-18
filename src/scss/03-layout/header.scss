@@ -1,0 +1,27 @@
+header {
+  margin-top: 16px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: $primary-color;
+}
+
+.dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+
+  p:first-of-type {
+    margin-right: 8px;
+  }
+}

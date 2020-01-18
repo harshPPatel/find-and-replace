@@ -1,0 +1,39 @@
+.toggle-slider {
+  display: none;
+}
+
+.toggle-slider-label {
+  cursor: pointer;
+  text-indent: -100vw;
+  display: inline-block;
+  position: relative;
+  width: $toggle-width;
+  height: $toggle-height;
+  background-color: $toggle-background;
+  border-radius: 25px;
+  margin-top: 6px; // To align with p tag
+  transition: all 0.2s ease-out;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $toggle-handler-color;
+    border-radius: 50%;
+    transition: all 0.2s ease-out;
+  }
+}
+
+// Active toggle styles
+
+.toggle-slider:checked + .toggle-slider-label {
+  background-color: $toggle-active-background;
+}
+
+.toggle-slider:checked + .toggle-slider-label::after {
+  transform: translate3d(20px, 0, 0);
+  background-color: $toggle-handler-active-color;
+}
