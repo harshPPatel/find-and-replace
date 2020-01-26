@@ -5,11 +5,25 @@ form {
   width: 80%;
   margin: 24px auto 0;
 
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 512px) {
+    width: 100%;
+  }
+
   input,
   button {
     height: 50px;
     padding: 0 10px;
     font-size: 18px;
+
+    @media screen and (max-width: 512px) {
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+    }
   }
 
   input {
@@ -18,6 +32,7 @@ form {
     border: 1px solid rgba(#000, 0.1);
     border-bottom: 3px solid rgba(#000, 0.15);
     color: rgba(#000, 0.9);
+    background-color: transparent;
 
     &:focus {
       border-bottom-color: rgba(#000, 0.25);
@@ -35,6 +50,7 @@ form {
     border: 3px solid rgba(#000, 0.25);
     color: rgba(#000, 0.75);
     letter-spacing: 1px;
+    background-color: transparent;
 
     &:hover {
       background: rgba(#000, 0.05);
@@ -47,8 +63,17 @@ form {
     justify-content: center;
     flex: 1;
 
+    @media screen and (max-width: 720px) {
+      width: 100%;
+    }
+
     &:first-of-type {
       margin-right: 10px;
+
+      @media screen and (max-width: 720px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
 
     input {
@@ -58,6 +83,9 @@ form {
     button {
       flex: 1;
       min-width: 125px;
+      @media screen and (max-width: 512px) {
+        min-width: 115px;
+      }
     }
   }
 }

@@ -1,4 +1,0 @@
-[ ] Remove unnecessary scss files
-[ ] responsive
-[ ] check body height and width on responsive
-[ ] handle scrolling when too long text is pasted.

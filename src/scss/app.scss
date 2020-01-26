@@ -3,15 +3,11 @@
 
 // 01 - helpers
 @import './01-helpers/variables.scss';
-@import './01-helpers/breakpoints.scss';
-@import './01-helpers/mixins.scss';
-@import './01-helpers/functions.scss';
 
 // 02 - basic
 @import './02-basic/base.scss';
 @import './02-basic/typography.scss';
-@import './02-basic/grid.scss';
-@import './02-basic/utilities.scss';
+@import './02-basic/dark-mode.scss';
 
 // 03 - layout
 @import './03-layout/header.scss';
